@@ -1,0 +1,38 @@
+<html>
+    <body>
+        <head>
+            <title> Document</title>
+        </head>
+        <h2>Javascript array sort</h2>
+        <p>Click the button to sort the array in ascending order</p>
+
+        <button onclick="myFunction()">click me to get ascending format</button>
+        <button onclick="myFunction2()">click me to get descending format</button>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <script>
+        var points = [49,23,43,22,53];
+        document.getElementById('demo').innerHTML = points
+
+        function myFunction()
+        {
+            points.sort(function(a,b)
+            {
+                return a-b;
+            });
+            
+            document.getElementById('demo').innerHTML = points;
+        }
+        
+        function  myFunction2()
+        {
+            points.sort(function (a,b)
+            {
+                return b-a;
+            });
+
+            document.getElementById('demo2').innerHTML = points;
+        }
+    </script>
+    </body>
+</html>

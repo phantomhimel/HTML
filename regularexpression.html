@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>web page</title>
+        <body>
+            <p id="demo">Please visit Microsoft and Microsoft</p>
+            <button onclick="Myfunction()">click me</button>
+            
+            <script>
+                function Myfunction()
+                {
+                     var str = document.getElementById('demo').innerHTML;
+                     var n = str.replace(/Microsoft/g, "w3school");
+                     document.getElementById('demo').innerHTML = n;
+                }
+            </script>
+        </body>
+    </head>
+</html>

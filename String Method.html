@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Documnet</title>
+        <body>
+            <p id="demo"></p>
+            <p id="demo2"></p>
+            <p id="demo3"></p>
+            <script>
+                var str= "Please do the locate where locate occurs";
+                var pos = str.indexOf("locate");
+                var pos2 = str.lastIndexOf("locate", 25);
+                var pos3 = str.search("locate");
+                //document.getElementById('demo').innerHTML = pos;
+                document.getElementById('demo').innerHTML = pos3;
+
+                var string = "Apple, Banana, Kiwi";
+                var res = string.slice(7,15);
+                var ress = string.substr(7,6);
+                document.getElementById('demo2').innerHTML = res;
+                document.getElementById('demo3').innerHTML = ress;
+            </script>
+        </body>
+    </head>
+</html>

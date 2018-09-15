@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <head>
+            <title>
+                documnet
+            </title>
+        </head>
+
+        <h2>Javascript array</h2>
+        <p>The lowest number is <span id="demo"></span></p>
+        <p>The highest number is <span id="demo2"></span></p>
+        <script>
+        var points = [40, 100, 1, 5, 35];
+        points.sort(function(a, b)
+        {
+            return a-b
+        });
+        document.getElementById('demo').innerHTML = points[0];
+        document.getElementById('demo2').innerHTML = points[points.length-1];
+        document.write(points);
+        </script>
+    </body>
+</html>

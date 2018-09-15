@@ -1,0 +1,33 @@
+<html>
+    <body>
+        <head>
+            <title>document</title>
+        </head>
+        <p>Click the below button to sort the array alphabetically
+            or numerically
+        </p>
+        <button onclick="myfunction()">Sort alphabetically</button>
+        <button onclick="myfunction2()">Sort Numerically</button>
+
+        <p id="demo"></p>
+        <script>
+        var points = [5,40,250,120,10,0,1,35];
+        document.getElementById('demo').innerHTML = points;
+
+        function myfunction()
+        {
+            points.sort();
+            document.getElementById('demo').innerHTML = points;
+        }
+
+        function myfunction2()
+        {
+            points.sort(function(a,b)
+            {
+                return a-b;
+            });
+            document.getElementById('demo').innerHTML = points;
+        }
+        </script>
+    </body>
+</html>

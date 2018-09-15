@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+        var item = ["banana", "orange", "tomato", 50, 90.98];
+        document.getElementById('demo').innerHTML = item;
+        item.push("gondar");
+        document.getElementById('demo').innerHTML = item;
+        document.getElementById('demo').innerHTML = isArray(item);
+        function isArray(x) {
+        return x.constructor.toString().indexOf("Array") > -1;
+}
+        </script>
+    </body>
+</html>

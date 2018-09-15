@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="type"></p>
+    <script>
+
+        var person = 
+        {
+            firstname: "john",
+            lastname: "china",
+            age: 59,
+            eyeColor: "blue"
+        };
+
+        document.getElementById('demo').innerHTML = person.firstname +
+        " " + person.lastname + " is "+ person.age + " years old."+
+        " His eye color is "+ person.eyeColor;
+
+        document.getElementById('type').innerHTML = typeof "blue"+
+        "<br/>" + typeof 59;
+    </script>
+</body>
+</html>
